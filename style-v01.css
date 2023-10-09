@@ -1317,7 +1317,6 @@ table {
   background-color: #e3e3e3;
   border-radius: 4px;
 }
-
 .nav-close .menu-line:first-of-type {
   transform: translate(1px, 3px) rotate(45deg);
 }
@@ -1453,6 +1452,7 @@ table {
 @media screen and (max-width: 768px) {
   .menu-btn {
     display: flex;
+    margin-left: 16px;
   }
 
   .nav-items {
@@ -1483,6 +1483,15 @@ table {
     flex: 0 0 auto;
   }
 
+  .reg-cta {
+    font-size:14px;
+    padding-right: 0;
+  }
+  .gft-cta {
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 14px;
+  }
   .hero {
     background-position: bottom, left, left;
     background-size: 50%, cover, cover;
