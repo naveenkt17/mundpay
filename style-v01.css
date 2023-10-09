@@ -1317,6 +1317,7 @@ table {
   background-color: #e3e3e3;
   border-radius: 4px;
 }
+
 .nav-close .menu-line:first-of-type {
   transform: translate(1px, 3px) rotate(45deg);
 }
@@ -1469,29 +1470,33 @@ table {
     overflow: hidden;
     transition: all 0.4s ease-in-out;
   }
-.nav-item a.nav-link {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  
-}
+
+  .nav-item a.nav-link {
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+  }
 
   .nav-close .nav-items {
     visibility: visible;
     max-height: 100vh;
   }
+
   .navbar {
     flex: 0 0 auto;
   }
 
   .reg-cta {
-    font-size:14px;
+    font-size: 14px;
     padding-right: 0;
   }
+
   .gft-cta {
     padding-left: 12px;
     padding-right: 12px;
     font-size: 14px;
   }
+
   .hero {
     background-position: bottom, left, left;
     background-size: 50%, cover, cover;
@@ -1525,6 +1530,7 @@ table {
   .card-column-3 {
     max-width: 100%;
     margin-bottom: 32px;
+    padding-left: 0;
   }
 
   .card-column-4 {
@@ -1598,6 +1604,7 @@ table {
   .section-text {
     font-size: 14px;
     line-height: 24px;
+    padding-right: 0;
   }
 
   .pay-step .title-content {
@@ -1625,7 +1632,7 @@ table {
     height: 240px;
     border-radius: 0px 80px 0px 0px;
     margin-top: 16px;
-    background-position:  left top;
+    background-position: left top;
   }
 
   .pay-step {
@@ -1666,28 +1673,37 @@ table {
     min-width: 100%;
     max-width: 100%;
   }
+
   .flx60 {
     flex: 0 0 100%;
     max-width: 100%;
   }
-.testimonial-content{
-  flex: 0 0 100%;
+
+  .testimonial-content {
+    flex: 0 0 100%;
     max-width: 100%;
     text-align: center;
     margin-top: 48vh;
-}
-.bg-img-08:after{
-  width: 100%;
-  height: calc(48vh - 40px);
-}
-.mt32{
-  margin-top: 24px;
-}
-.testimonial-card {
-  flex: 0 0 100%;
+    padding-left: 0;
+  }
+  .lh58{
+    line-height: 40px;
+  }
+  .bg-img-08:after {
+    width: 100%;
+    height: calc(48vh - 40px);
+  }
+
+  .mt32 {
+    margin-top: 24px;
+  }
+
+  .testimonial-card {
+    flex: 0 0 100%;
     max-width: 100%;
     align-items: center;
-}
+  }
+
   .footer-quick-form {
     display: flex;
     align-items: center;
@@ -1735,5 +1751,5 @@ table {
     flex-direction: column;
     flex-wrap: wrap;
   }
-  
+
 }
