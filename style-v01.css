@@ -1491,9 +1491,11 @@ table {
     padding-right: 0;
     padding-left: 8px;
   }
+
   .year-exp {
     transform: translate(0, -16px);
-}
+  }
+
   .gft-cta {
     padding-left: 8px;
     padding-right: 8px;
@@ -1692,13 +1694,16 @@ table {
     flex-direction: column;
     align-items: center;
   }
-  .testimonial-cards{
+
+  .testimonial-cards {
     margin-top: 24px;
     padding-left: 0;
   }
-  .lh58{
+
+  .lh58 {
     line-height: 40px;
   }
+
   .bg-img-08:after {
     width: 100%;
     height: calc(48vh - 40px);
@@ -1719,6 +1724,10 @@ table {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+  }
+
+  .footer-list {
+    margin-left: 16px;
   }
 
   .footer-logo,
