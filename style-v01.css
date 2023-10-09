@@ -1453,7 +1453,7 @@ table {
 @media screen and (max-width: 768px) {
   .menu-btn {
     display: flex;
-    margin-left: 16px;
+    margin-left: 8px;
   }
 
   .nav-items {
@@ -1489,11 +1489,12 @@ table {
   .reg-cta {
     font-size: 14px;
     padding-right: 0;
+    padding-left: 8px;
   }
 
   .gft-cta {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
     font-size: 14px;
   }
 
