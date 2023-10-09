@@ -1675,6 +1675,7 @@ table {
   .discover-sec-content {
     min-width: 100%;
     max-width: 100%;
+    padding-left: 16px;
   }
 
   .flx60 {
@@ -1684,13 +1685,16 @@ table {
 
   .testimonial-content {
     flex: 0 0 100%;
+    display: flex;
     max-width: 100%;
-    text-align: center;
     margin-top: 48vh;
     padding-left: 0;
+    flex-direction: column;
+    align-items: center;
   }
   .testimonial-cards{
     margin-top: 24px;
+    padding-left: 0;
   }
   .lh58{
     line-height: 40px;
