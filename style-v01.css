@@ -1684,7 +1684,9 @@ table {
     flex: 0 0 100%;
     max-width: 100%;
   }
-
+.testimonial.wrapper{
+  justify-content: center;
+}
   .testimonial-content {
     flex: 0 0 100%;
     display: flex;
