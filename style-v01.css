@@ -1491,7 +1491,9 @@ table {
     padding-right: 0;
     padding-left: 8px;
   }
-
+  .year-exp {
+    transform: translate(0, -16px);
+}
   .gft-cta {
     padding-left: 8px;
     padding-right: 8px;
