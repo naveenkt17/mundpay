@@ -1920,6 +1920,16 @@ table {
   margin-bottom: 12px;
 }
 }
+@media only screen and (max-width: 590px){
+.get-in-touch .contact-container{
+  flex-wrap: wrap;
+  padding-top: 0;
+}
+.get-in-touch .contact-container .card-column-2{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+}
 
 @media only screen and (max-width: 376px){
   .mb24{
@@ -2024,10 +2034,6 @@ padding: 16px 20px 24px 20px;
 }
 .get-in-touch .hero-heading{
   font-size: 32px;
-}
-.get-in-touch .contact-container{
-  flex-wrap: wrap;
-  padding-top: 0;
 }
 .get-in-touch .contact-container .card-column-2{
   flex: 0 0 100%;
