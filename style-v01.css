@@ -582,6 +582,9 @@ table {
 .m16 {
   margin: 16px;
 }
+.m24 {
+  margin: 24px;
+}
 .m32 {
   margin: 32px;
 }
@@ -596,6 +599,10 @@ table {
 .mt12,
 .mtb12 {
   margin-top: 12px;
+}
+.mt14,
+.mtb14 {
+  margin-top: 14px;
 }
 .mt16,
 .mtb16 {
@@ -704,6 +711,10 @@ table {
 .mtb12 {
   margin-bottom: 12px;
 }
+.mb14,
+.mtb14 {
+  margin-bottom: 14px;
+}
 .mb16,
 .mtb16 {
   margin-bottom: 16px;
@@ -763,6 +774,10 @@ table {
 .ptb12 {
   padding-top: 12px;
 }
+.pt14,
+.ptb14 {
+  padding-top: 14px;
+}
 .pt16,
 .ptb16 {
   padding-top: 16px;
@@ -807,6 +822,10 @@ table {
 .plr24 {
   padding-left: 24px;
 }
+.pl28,
+.plr28 {
+  padding-left: 28px;
+}
 .pl32,
 .plr32 {
   padding-left: 32px;
@@ -842,6 +861,10 @@ table {
 .plr24 {
   padding-right: 24px;
 }
+.pr28,
+.plr28 {
+  padding-right: 28px;
+}
 .pr32,
 .plr32 {
   padding-right: 32px;
@@ -866,6 +889,10 @@ table {
 .pb12,
 .ptb12 {
   padding-bottom: 12px;
+}
+.pb14,
+.ptb14 {
+  padding-bottom: 14px;
 }
 .pb16,
 .ptb16 {
@@ -903,6 +930,9 @@ table {
 }
 .brd2 {
   border: 1px solid #a9d621;
+}
+.brd3 {
+  border: 1px solid #b8b8b8;
 }
 .brd-b1 {
   border-bottom: 1px solid #b8b8b8;
@@ -1079,6 +1109,14 @@ table {
   background-repeat: repeat;
   background-size: 350px auto;
 }
+.bg-img-09 {
+  background:linear-gradient(
+      180deg,
+      rgba(169, 214, 33, 0.658) 30%,
+      rgba(169, 214, 33, 0.64) 100%
+    ),
+    url(images/banner-bg-v01.jpg) no-repeat center/cover;
+}
 
 .bg-img-07 {
   background: linear-gradient(
@@ -1173,13 +1211,6 @@ table {
 }
 .menu-line:not(:last-of-type) {
   margin-bottom: 4px;
-}
-.nav-close .menu-btn {
-  background-color: #414141;
-  border-radius: 4px;
-}
-.nav-close .menu-line {
-  background-color: #fff;
 }
 .nav-close .menu-line:first-of-type {
   transform: translate(1px, 3px) rotate(45deg);
@@ -1403,10 +1434,6 @@ table {
   height: 100%;
 }
 @media only screen and (max-width: 1024px){
-  .flx33{
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
   .fs24{
     font-size: 18px;
   }
@@ -1442,6 +1469,14 @@ table {
   }
   .service-hero {
     height: 35vh;
+  }
+
+  .services-section .left-column{
+    margin-right: 0;
+  }
+  .services-section .banner-img{
+    flex: 0 0 33%;
+    max-width: 33.33333%;
   }
 .about-sec .wrapper{
   flex-direction: column-reverse;
@@ -1524,6 +1559,11 @@ table {
 .how-work .title-content{
   align-items: center;
 }
+.right-column,
+.card-container .card-column-3{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
 
 /* contact-page */
 .get-in-touch{
@@ -1586,11 +1626,52 @@ table {
     max-width: 600px;
   }
   .menu-btn{
-    display: block;
+    display: flex;
   }
   .navbar{
     display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    min-height: calc(100vh - 64px);
+    max-height: calc(100vh - 64px);
+    background-color: #ffffff;
+    overflow: hidden;
+    overflow-y: auto;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: start;
+    width: 100vw;
   }
+  .navbar.on-nav{
+    display: block;
+  }
+  .nav-items .nav-item{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .nav-items .nav-item{
+    border-bottom: 1px solid #e1e1e1 ;
+  }
+  .nav-items .nav-item .nav-link{ 
+    padding: 24px 24px;
+  }
+  .nav-sub-items {
+    display: block;
+    position: relative;
+    border: none;
+    box-shadow: none;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    margin-top: -16px;
+}
+.header-btn{
+  display: inline-block;
+  padding-left: 24px;
+}
+.reg-cta{
+  margin: 16px 0;
+}
   .hero {
     height: 50vh;
 }
@@ -1793,7 +1874,23 @@ table {
 .card-credits .card-client p{
   font-size: 12px;
 }
-
+/* service-detail */
+.banner-text {
+  flex-wrap: wrap;
+}
+.banner-text .banner-pera{
+  margin-right: 0;
+}
+.banner-text .img{
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin: 24px 0;
+}
+.banner-text .img img{
+    height: 240px;
+    object-fit: cover;
+}
+/* service-detail-end */
 .footer-quick-form{
   flex-direction: column;
   text-align: center;
@@ -1819,7 +1916,9 @@ table {
   flex: 0 0 50%;
   max-width: 50%;
 }
-
+.footer-social-list{
+  margin-bottom: 12px;
+}
 }
 
 @media only screen and (max-width: 376px){
@@ -1854,6 +1953,10 @@ table {
   }
   .service-hero .contact-us{
     font-size: 36px;
+  }
+  .services-section .banner-img{
+    flex: 0 0 100%;
+    max-width: 100%;
   }
   .about-sec-content {
     text-align: center;
