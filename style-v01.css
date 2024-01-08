@@ -1163,6 +1163,9 @@ table {
 .logo img {
   height: 48px;
 }
+.navbar .nav-link:hover .expand-more{
+  color: #8aa82f;
+}
 .nav-sub-items{
   border-top: 2px solid #a9d621;
 }
